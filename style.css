@@ -10,3 +10,11 @@ section {
 h2 {
     margin-bottom: 30px;
 }
+
+.resume-image {
+  width: 100%;       /* fills container */
+  max-width: 600px;  /* never wider than 600px on large screens */
+  height: auto;      /* maintain aspect ratio */
+  margin: 0 auto;    /* center horizontally */
+  display: block;
+}
