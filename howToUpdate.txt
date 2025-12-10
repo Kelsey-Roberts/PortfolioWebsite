@@ -1,0 +1,22 @@
+Push Website:
+
+Edit your HTML, CSS, JS, or other files locally.
+
+Preview changes in the browser using Live Server.
+
+When you’re happy with changes, push them to GitHub:
+
+git add .
+git commit -m "Your commit message here"
+git push origin main
+
+
+------------------
+If you ever do edit something directly on GitHub, run:
+
+git pull origin main
+
+
+
+-----------------------
+Live Server: right click in the html file to see changes in Live Server (Browser)

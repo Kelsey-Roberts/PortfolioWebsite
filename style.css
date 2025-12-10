@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'ArduinoMono';
+  src: url('Files/ArduinoMono.ttf') format('truetype');
+}
+
 body {
     font-family: Arial, sans-serif;
 }
@@ -17,4 +22,23 @@ h2 {
   height: auto;      /* maintain aspect ratio */
   margin: 0 auto;    /* center horizontally */
   display: block;
+}
+
+.code-box {
+  background: #ffffff;           /* white background */
+  color: #000000;                /* black text */
+  padding: 12px;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-family: 'ArduinoMono', Consolas, monospace; /* use Arduino font if available */
+  font-size: 0.9rem;
+  line-height: 1.4;
+  border: 3px solid #00979D;    /* Arduino teal-green border */
+}
+
+.modal-body video {
+  width: 100%;
+  height: auto; /* keeps proportions */
+  border-radius: 8px;
+  margin-bottom: 20px;
 }

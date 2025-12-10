@@ -56,35 +56,57 @@
     <h2>Projects</h2>
     <div class="row">
       <!-- Project 1 -->
-      <div class="col-md-4">
-        <div class="card mb-4">
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
           <img src="LotDSscreenshot.png" class="card-img-top" alt="Project 1 Screenshot">
-          <div class="card-body">
+          <div class="card-body d-flex flex-column">
             <h5 class="card-title">Land of the Dying Sun</h5>
-            <p class="card-text">A voxel game made in Unity for mobile devices. </p>
-            <a href="https://github.com/Kelsey-Roberts/UnityGame_LandOfTheDyingSun.git" class="btn btn-primary" target="_blank">View on GitHub</a>
+            <p class="card-text">A voxel game made in Unity for mobile devices.</p>
+            <!-- Buttons pushed to the bottom, stacked vertically -->
+            <div class="mt-auto d-flex flex-column">
+              <button type="button" class="btn btn-danger mb-2" data-bs-toggle="modal" data-bs-target="#LotDSModal">
+                Watch Video
+              </button>
+              <a href="https://github.com/Kelsey-Roberts/UnityGame_LandOfTheDyingSun.git" class="btn btn-primary">
+                View on GitHub
+              </a>
+            </div>
           </div>
         </div>
       </div>
       <!-- Project 2 -->
-      <div class="col-md-4">
-        <div class="card mb-4">
+      <div class="col-md-4  mb-4">
+        <div class="card h-100">
           <img src="ExpoGame Screenshot.png" class="card-img-top" alt="Project 2 Screenshot">
-          <div class="card-body">
+          <div class="card-body d-flex flex-column">
             <h5 class="card-title">Dungeon Crawler Environment Generator</h5>
             <p class="card-text">My four team members and I designed this plugin for Godot game engine that accepts user input in a form to generate a dungeon-crawler-style videogame environment.</p>
-            <a href="https://github.com/Kelsey-Roberts/GodotPluginCapstone.git" class="btn btn-primary" target="_blank">View on GitHub</a>
+            <a href="https://github.com/Kelsey-Roberts/GodotPluginCapstone.git" class="btn btn-primary mt-auto" target="_blank">View on GitHub</a>
           </div>
         </div>
       </div>
       <!-- ASP.net MVC Web App -->
-      <div class="col-md-4">
-        <div class="card mb-4">
+      <div class="col-md-4  mb-4">
+        <div class="card h-100">
           <img src="AppTroveScreenShot.png" class="card-img-top" alt="Project 3 Screenshot">
-          <div class="card-body">
+          <div class="card-body d-flex flex-column">
             <h5 class="card-title">AppTrove</h5>
             <p class="card-text">AppTrove is a simple ASP.NET MVC web application designed to act as a database/catalog of applications. This project demonstrates basic web development skills, database integration, and the use of the ASP.NET MVC framework.</p>
-            <a href="https://github.com/Kelsey-Roberts/AppTrove-MVC-WebApp.git" class="btn btn-primary" target="_blank">View on GitHub</a>
+            <a href="https://github.com/Kelsey-Roberts/AppTrove-MVC-WebApp.git" class="btn btn-primary mt-auto" target="_blank">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+      <!-- Arduino Project-->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="Robot Arm Diagram.jpg" class="card-img-top" alt="Project 4 Screenshot">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Remote Wearable-controlled robotic arm</h5>
+            <p class="card-text">This is an arm-mounted wearable that controls a robotic arm remotely via wifi. Controlled with an Arduino.</p>
+            <!-- Button to open the modal -->
+            <button type="button" class="btn btn-primary mt-auto" data-bs-toggle="modal" data-bs-target="#roboticsModal">
+              View Code
+            </button>
           </div>
         </div>
       </div>
@@ -107,8 +129,17 @@
   </div>
 </section>
 
+<!-- Robotics modal goes here -->
+<div id="roboticsModalContainer"></div>
+
+<!-- Land of the Dying Sun video modal goes here -->
+<div id="LotDSModalContainer"></div>
+
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="script.js"></script>
+<script src="roboticsModal.js"></script>
+<script src="LotDSModal.js"></script>
+
 </body>
 </html>
